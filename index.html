@@ -326,6 +326,16 @@
     .proj-name { font-size: 1.05rem; font-weight: 700; margin-bottom: .6rem; }
     .proj-desc { font-size: .875rem; color: var(--muted); line-height: 1.7; flex: 1; margin-bottom: 1.2rem; }
     .proj-tags { display: flex; flex-wrap: wrap; gap: .45rem; }
+    .proj-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 1.2rem; }
+    .proj-link {
+      display: inline-flex; align-items: center; gap: .4rem;
+      font-size: .8rem; font-family: var(--mono); font-weight: 600;
+      color: var(--accent); text-decoration: none;
+      border: 1px solid rgba(56,189,248,.3); border-radius: 7px;
+      padding: .35rem .8rem;
+      transition: background .2s, border-color .2s;
+    }
+    .proj-link:hover { background: rgba(56,189,248,.1); border-color: var(--accent); }
     .tag {
       font-family: var(--mono); font-size: .72rem;
       padding: .2rem .65rem; border-radius: 6px;
@@ -677,14 +687,19 @@
           progressive rollouts via Istio service mesh, and load-tested with Locust to validate SLO targets.
           Provisioned all infrastructure with Terraform.
         </div>
-        <div class="proj-tags">
-          <span class="tag">GKE</span>
-          <span class="tag">Kubernetes</span>
-          <span class="tag">Istio</span>
-          <span class="tag green">Terraform</span>
-          <span class="tag green">Prometheus</span>
-          <span class="tag purple">Grafana</span>
-          <span class="tag purple">Locust</span>
+        <div class="proj-footer">
+          <div class="proj-tags">
+            <span class="tag">GKE</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Istio</span>
+            <span class="tag green">Terraform</span>
+            <span class="tag green">Prometheus</span>
+            <span class="tag purple">Grafana</span>
+            <span class="tag purple">Locust</span>
+          </div>
+          <a href="https://github.com/QuehlaouiMohamed/gke-cloud-native-platform" target="_blank" rel="noopener" class="proj-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
       </div>
 
@@ -700,14 +715,19 @@
           and Cassandra for high-throughput data storage. Automated deployment with ArgoCD, Terraform, and GitLab CI.
           Designed for resilience across distributed nodes at scale.
         </div>
-        <div class="proj-tags">
-          <span class="tag">Kafka</span>
-          <span class="tag">Cassandra</span>
-          <span class="tag green">ArgoCD</span>
-          <span class="tag green">Terraform</span>
-          <span class="tag">Node.js</span>
-          <span class="tag purple">React</span>
-          <span class="tag purple">GCP</span>
+        <div class="proj-footer">
+          <div class="proj-tags">
+            <span class="tag">Kafka</span>
+            <span class="tag">Cassandra</span>
+            <span class="tag green">ArgoCD</span>
+            <span class="tag green">Terraform</span>
+            <span class="tag">Node.js</span>
+            <span class="tag purple">React</span>
+            <span class="tag purple">GCP</span>
+          </div>
+          <a href="https://github.com/QuehlaouiMohamed/SDTD-Aviation-CO2-Emissions" target="_blank" rel="noopener" class="proj-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
       </div>
 
